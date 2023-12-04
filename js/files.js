@@ -6,8 +6,8 @@ export function loadCredentials () {
 		fetch('./Data/dataf.txt')
 			.then((response) => response.text())
 			.then((textView) => {
-				console.log(b64DecodeUnicode(textView));
-				console.log(JSON.parse(b64DecodeUnicode(textView)));
+				// console.log(b64DecodeUnicode(textView));
+				// console.log(JSON.parse(b64DecodeUnicode(textView)));
 				resolve(JSON.parse(b64DecodeUnicode(textView))[0].firebaseConfig);
 			});
 	});

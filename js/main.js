@@ -7,8 +7,8 @@ const GoStep2 = () => {
 	});
 };
 
-// GoTo('step1'); // Para pruebas usar:  GoStep2()
-GoStep2();
+GoTo('step1'); // Para pruebas usar:  GoStep2()
+// GoStep2();
 
 window.encenderVela = () => GoStep2();
 

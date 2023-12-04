@@ -9,6 +9,7 @@
    <link rel="stylesheet" href="./../CSS/Stylesheet.css">
    <link rel="icon" type="image/x-icon" href="../Images/Favicon.png">
    <meta name="view-transition" content="same-origin" />
+	<script src="./js/msj.js" type="module" defer></script>
 </head>
 
 <body>
@@ -28,12 +29,12 @@
          <!-- --- Contenedor Mensajes --- -->
          <div class="ContenedorInterno Fondo02">
             <!-- --- Espacio Mensaje --- -->
-            <div class="ContenedorMensaje AnimacionSalidaMensaje">
+            <div class="ContenedorMensaje " id="idMsj">
 
 				<div class="ContenidoRemitente">
-					<div class="NombreRemitente">Camilo Antonio Hernández Rodríguez</div>
-					<div class="CiudadRemitente">Medellín</div>
-					<div class="MensajeRemitente">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget ullamcorper turpis. Mauris dui elit, commodo vitae vestibulum sed, fermentum a neque. Vestibulum luctus rutrum purus sit amet faucibus. Nulla lobortis turpis nec enim eleifend varius. Duis accumsan viverra iaculis. Nullam consequat sagittis commodo. Quisque porta leo sed ullamcorper sodales. Nullam orci lorem, interdum sit amet nulla sit amet, elementum egestas elit. Vivamus viverra vestibulum nisl, id ultricies lectus malesuada ut. Ut in orci mattis quam porttitor placerat. Donec eget lacinia dui. Proin molestie tellus ac risus blandit, in ornare tortor ullamcorper.</div>
+					<div class="NombreRemitente" id="idUsername"></div>
+					<div class="CiudadRemitente" id="idCity"></div>
+					<div class="MensajeRemitente" id="idText"></div>
                 </div>
             </div>
         </div>

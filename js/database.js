@@ -38,6 +38,20 @@ export function getUserData () {
 	});
 }
 
+export function getMsgs () {
+	// return true;
+	return new Promise((resolve, reject) => {
+		getDB().then((db) => {
+			const starCountRef = ref(db, '/messages');
+			onValue(starCountRef, (snapshot) => {
+				resolve(Object.values(snapshot.val()));
+			}, {
+				onlyOnce: false
+			});
+		}).catch((e) => reject(new Error('error getDB: ' + e)));
+	});
+}
+
 export function updateScore (userId, newScore) {
 	return new Promise((resolve, reject) => {
 		getDB().then((db) => {
