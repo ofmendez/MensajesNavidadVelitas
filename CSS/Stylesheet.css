@@ -169,6 +169,7 @@ body{
     outline: none;
     font-size: 13px;
     line-height: 1.2em;
+    resize: none;
   }
 
   .FormaMensaje button[type=submit]{
