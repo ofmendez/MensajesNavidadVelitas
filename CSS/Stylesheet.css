@@ -144,7 +144,7 @@ body{
     }
   }
 
-  @media  (max-width: 540px) and (min-height: 800px) {
+  @media  (max-width: 600px) and (min-height: 800px) {
     .ContenedorMensaje {
         width: 86svw;
         height: 121svw;
