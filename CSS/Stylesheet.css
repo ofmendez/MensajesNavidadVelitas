@@ -155,10 +155,11 @@ body{
     align-items: center;
     position:relative;
     top: 28%;
+    font-size: 2px;
   }
 
   .FormaMensaje textarea, .FormaMensaje input{
-    width:100%;
+    width:100% !important;
   } 
 
   .FormaMensaje textarea, .FormaMensaje input[type=text]{
@@ -166,6 +167,8 @@ body{
     border: 0 solid transparent;
     margin-bottom:10px;
     outline: none;
+    font-size: 13px;
+    line-height: 1.2em;
   }
 
   .FormaMensaje button[type=submit]{
