@@ -40,7 +40,7 @@ body{
 }
 
 .LogotipoEsquinaSuperior img{
-    width:clamp(80px, 16vw, 180px);
+    width:clamp(80px, 10vw, 180px);
 }
 
 .LogotipoEsquinaInferior{
@@ -51,7 +51,8 @@ body{
 }
 
 .LogotipoEsquinaInferior img{
-    width:clamp(20px, 4vw, 50px);
+  /*   width:clamp(20px, 4vw, 50px); */
+    width:40px;
     
 }
 
@@ -63,7 +64,7 @@ body{
 
 .ContenedorInterno{
     width:100%;
-    margin: clamp(25px, 5vw, 60px);
+    margin: clamp(25px, 3vw, 60px);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
