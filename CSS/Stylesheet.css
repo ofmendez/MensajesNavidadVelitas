@@ -127,6 +127,7 @@ body{
     top:50%;
     left:50%;
     text-align: center;
+    z-index: 50;
 }
 
 @media (orientation: landscape) {
@@ -190,6 +191,16 @@ body{
  	}
 
 .Velas{
+    max-width: 74svw;
+    max-height: 56svh;
+    z-index: 3;
+}
+
+.VelasFondo{
+    position:absolute;
+    transform: translate(-50%, -50%);
+    top:50%;
+    left:50%;
     max-width: 74svw;
     max-height: 56svh;
     z-index: 3;
@@ -262,7 +273,8 @@ body{
     position:relative;
     top: 28%;
     line-height: 1.1em;
-    font-size:16px;
+    font-size:15px;
+    z-index:50;
 }
 
 .ContenidoRemitente div{
