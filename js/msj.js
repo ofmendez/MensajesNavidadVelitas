@@ -16,6 +16,7 @@ function animMsg () {
 		window.idMsj.classList.toggle('AnimacionSalidaMensaje');
 		animMsg();
 	}, totalTime);
+	window.idMsj.hidden = false;
 };
 
 function nextMsg () {
