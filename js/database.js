@@ -8,7 +8,7 @@ let app = {};
 let existDatabase = false;
 
 const getDB = function () {
-	console.log('------------------- >  getDB < ---------------------------');
+	// console.log('------------------- >  getDB < ---------------------------');
 	return new Promise((resolve, reject) => {
 		if (existDatabase)
 			resolve(database);

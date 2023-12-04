@@ -107,6 +107,7 @@ body{
     max-width: 250px;
 }
 .BotonEncender{
+	width: -webkit-fill-available;
 	max-width: 180px;
 	--movex: 0%;
 	--movey: 0%;
@@ -240,6 +241,7 @@ body{
 .AnimacionSalidaMensaje{
     animation: salidaMensaje 2s 1;
     transition-timing-function: ease-in;
+	 animation-fill-mode: forwards;
 }
 
 @keyframes salidaMensaje {
