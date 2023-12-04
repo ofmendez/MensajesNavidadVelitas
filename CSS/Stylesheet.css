@@ -111,6 +111,7 @@ body{
 	--movex: 0%;
 	--movey: 0%;
   animation: pulse 2s infinite;
+  z-index: 10;
 }
 
 /* --- Paso 02 --- */
@@ -188,8 +189,8 @@ body{
  	}
 
 .Velas{
-    max-width: 86svw;
-    max-height: 68svh;
+    max-width: 74svw;
+    max-height: 56svh;
     z-index: 3;
 }
 
@@ -199,7 +200,8 @@ body{
     top:50%;
     left:50%;
     z-index: 2;
-    width:65svw;
+    width:60svw;
+    max-height:80svh;
 	 --movex: -50%;
 	 --movey: -50%;
 	animation: pulse 2s infinite;
