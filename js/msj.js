@@ -2,7 +2,8 @@ import { getMsgs } from './database.js';
 const totalTime = 12000;
 let allMessages = [];
 let currentMsg = -1;
-
+let idNewMsg = -1;
+const audio = new Audio('../Data/newMsj.mpeg');
 getMessages();
 
 function animMsg () {
@@ -21,18 +22,27 @@ function animMsg () {
 
 function nextMsg () {
 	currentMsg = (currentMsg + 1) % allMessages.length;
+	currentMsg = idNewMsg >= 0 ? idNewMsg : currentMsg;
+	console.log(currentMsg);
 	setMessage(currentMsg);
+	idNewMsg = -1;
 };
 
 function getMessages () {
 	getMsgs().then((res) => {
-		allMessages = res;
+		console.log('total', res.length);
+		if (res.length !== allMessages.length && currentMsg >= 0) {
+			idNewMsg = allMessages.length;
+			audio.play();
+		}
+		/* sort by date */
+		allMessages = res.sort((a, b) => a.createdAt - b.createdAt);
 		if (currentMsg < 0) {
 			nextMsg();
 			setTimeout(() => animMsg(), 1000);
 		}
 	});
-	setTimeout(() => getMessages(), 4 * totalTime);
+	setTimeout(() => getMessages(), 2 * totalTime);
 };
 
 function setMessage (id) {
