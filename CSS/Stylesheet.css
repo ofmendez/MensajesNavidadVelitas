@@ -1,5 +1,8 @@
 /* --- Importar Fuentes --- */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@font-face {
+    font-family: OracleSans_Rg;
+    src: url(../Fonts/OracleSans_Rg.woff);
+}
 
 /* --- Definir Variables --- */
 :root {
@@ -8,7 +11,7 @@
      --ColorFondos: #DDD8C1;
      --ColorRojo: #C84934;
      /* Tipografías */
-     --FuenteTipografia: 'Poppins', sans-serif;
+     --FuenteTipografia: 'OracleSans_Rg', sans-serif;
 }
 
 /* --- Configuración General --- */
@@ -67,7 +70,7 @@ body{
     margin: clamp(25px, 3vw, 60px);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 
 .Fondo01{
@@ -287,4 +290,8 @@ body{
 
 .clickeable{
 	cursor: pointer;
+}
+
+.ContenedorMensajes{
+    overflow: hidden;
 }
